@@ -31,7 +31,13 @@ nav = [
     "projects/index.md",
     "projects/untangling_people_flow.md",
     "projects/terminal_portfolio.md"
-   ]}
+    ]},
+   { "Research" = [
+     "research/index.md",
+     "research/publications.md",
+     "research/presentations.md"
+     ]},
+    { "Teaching" = "teaching.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -50,7 +56,10 @@ nav = [
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-#extra_javascript = ["assets/javascript/extra.js"]
+extra_javascript = [
+    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
+    "javascript/tablesort.js"
+]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
