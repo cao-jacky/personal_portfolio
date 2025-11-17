@@ -77,7 +77,7 @@ nav = [
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-favicon = "assets/images/favicon.ico"
+favicon = "fontawesome/solid/crow"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -276,9 +276,9 @@ code = "Jetbrains Mono"
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
-#[project.theme.icon]
-#logo = "lucide/smile"
-#repo = "lucide/smile"
+[project.theme.icon]
+logo = "fontawesome/solid/crow"
+repo = "fontawesome/solid/crow"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
