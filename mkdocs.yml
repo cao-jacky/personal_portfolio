@@ -1,0 +1,6 @@
+site_name: Jacky Cao
+site_url: https://jacky.sh
+theme:
+  name: material
+  font:
+    text: JetBrains Mono
