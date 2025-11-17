@@ -8,13 +8,15 @@
 
 [project]
 site_name = "Jacky Cao"
-
 site_description = "A computer science researcher at the University of Helsinki."
 site_author = "Jacky Cao"
 site_url = "https://jacky.sh"
 copyright = """
 Copyright &copy; 2025 Jacky Cao
 """
+
+repo_name = "cao-jacky"
+repo_url = "https://github.com/cao-jacky/"
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
@@ -291,7 +293,7 @@ code = "Jetbrains Mono"
 # ----------------------------------------------------------------------------
 [project.theme.icon]
 logo = "fontawesome/solid/crow"
-repo = "fontawesome/solid/crow"
+repo = "fontawesome/brands/github"
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
