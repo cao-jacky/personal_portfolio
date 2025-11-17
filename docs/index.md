@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Jacky Cao
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Hi, I'm a computer science researcher at the [University of Helsinki](https://researchportal.helsinki.fi/en/persons/jacky-cao/).
 
 ## Commands
 
