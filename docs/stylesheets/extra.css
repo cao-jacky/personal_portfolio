@@ -1,0 +1,5 @@
+:root  > * {
+  --md-accent-fg-color:        #0f548b;
+  --md-accent-fg-color--light: #0f548b;
+  --md-accent-fg-color--dark:  #81bff2;
+}
