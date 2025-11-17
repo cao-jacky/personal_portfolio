@@ -1,7 +1,7 @@
 # Teaching
-During my time as a doctoral and postdoctoral researcher, I have had the pleasure of being a teaching assistant and supervisor for master's projects.
+During my time as a doctoral and postdoctoral researcher, I have had the pleasure of being a teaching assistant for several courses and a supervisor for a handful of master's projects.
 
-A summary of my teaching experience. 
+A summary of my teaching experience.
 
 | Role | Course | Institution | Term |
 |---|---|---|---|
