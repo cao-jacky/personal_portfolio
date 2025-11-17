@@ -8,7 +8,7 @@ I am aiming for a **Doctor of Science (Technology)** degree in **Computer Scienc
 ## Durham University, UK
 *2015 - 2019*
 
-I obtained an integrated (undergraduate + masters) Master of Physics degree in Physics with a final grade of 2.i.
+I obtained an integrated (undergraduate + masters) **Master of Physics** degree in **Physics** with a final grade of 2.i.
 
 ## Xaverian Sixth Form College, UK
 *2013 - 2015*

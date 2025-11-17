@@ -296,8 +296,14 @@ repo = "fontawesome/solid/crow"
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
-#[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+[[project.extra.social]]
+icon = "fontawesome/solid/envelope"
+link = "mailto:hello@jacky.sh"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/cao-jacky/"
 
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/jacky-cao/"
