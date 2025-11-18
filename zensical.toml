@@ -31,7 +31,7 @@ nav = [
    { "Education" = "education.md"},
    { "Projects" = [
     "projects/index.md",
-    "projects/untangling_people_flow.md",
+    # "projects/untangling_people_flow.md",
     "projects/terminal_portfolio.md"
     ]},
    { "Research" = [
