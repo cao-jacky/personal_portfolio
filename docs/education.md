@@ -3,7 +3,7 @@
 ## University of Oulu, Finland
 *2019 - Current*
 
-I am aiming for a **Doctor of Science (Technology)** degree in **Computer Science and Engineering**. I have been awaiting the defence of my doctoral thesis since October 2023. My thesis is titled "5G Edge-Enhanced Mobile Augmented Reality.",
+I am aiming for a **Doctor of Science (Technology)** degree in **Computer Science and Engineering**. I have been awaiting the defence of my doctoral thesis since October 2023. My thesis is titled "5G Edge-Enhanced Mobile Augmented Reality.".
 
 ## Durham University, UK
 *2015 - 2019*
