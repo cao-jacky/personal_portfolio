@@ -37,7 +37,7 @@ nav = [
    { "Research" = [
      "research/index.md",
      "research/publications.md",
-     "research/presentations.md",
+    #  "research/presentations.md",
      "research/professional_activities.md"
      ]},
     { "Teaching" = "teaching.md" },
