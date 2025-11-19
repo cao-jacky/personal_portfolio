@@ -309,3 +309,9 @@ link = "https://github.com/cao-jacky/"
 [[project.extra.social]]
 icon = "fontawesome/brands/linkedin"
 link = "https://www.linkedin.com/in/jacky-cao/"
+
+# --- Google Analytics ---
+
+[project.extra.analytics]
+provider = "google"
+property = "G-3DF2436XST"
