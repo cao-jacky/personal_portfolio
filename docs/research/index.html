@@ -1,0 +1,1464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacky Cao | Mobile Augmented Reality: User Interfaces, Frameworks, and Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/83f0ae3239.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Mobile Augmented Reality: Frameworks and SDKs</h1>
+        <div class="reference">
+            The following table is taken from our survey paper, <div class="paper_title">"Mobile Augmented Reality: User
+                Interfaces, Frameworks, and Intelligence"</div>, available from ACM Computing Surveys. This table is up
+            to date as of 15th August 2022, if there are any updates required or suggestions of frameworks to include, please drop me an email at <a href="mailto:email@jacky.sh">email@jacky.sh</a>.
+        </div><br>
+
+        <div class="abstract_text">
+            Mobile Augmented Reality (MAR) integrates computer-generated virtual objects with physical environments for
+            mobile devices. MAR systems enable users to interact with MAR devices, such as smartphones and head-worn
+            wearables, and perform seamless transitions from the physical world to a mixed world with digital entities.
+            These MAR systems support user experiences using MAR devices to provide universal access to digital content.
+            Over the past 20 years, several MAR systems have been developed, however, the studies and design of MAR
+            frameworks have not yet been systematically reviewed from the perspective of user-centric design. This
+            article presents the first effort of surveying existing MAR frameworks (count: 37) and further discuss the
+            latest studies on MAR through a top-down approach: 1) MAR applications; 2) MAR visualisation techniques
+            adaptive to user mobility and contexts; 3) systematic evaluation of MAR frameworks, including supported
+            platforms and corresponding features such as tracking, feature extraction, and sensing capabilities; and 4)
+            underlying machine learning approaches supporting intelligent operations within MAR systems. Finally, we
+            summarise the development of emerging research fields and the current state-of-the-art, and discuss the
+            important open challenges and possible theoretical and technical directions. This survey aims to benefit
+            both researchers and MAR system developers alike.
+        </div><br>
+
+        <div class="table_title">
+            <center>Comparisons of several available features in MAR frameworks and SDKs.</center>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered border-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Framework/SDK</th>
+                        <th scope="col" colspan="6">Platform support</th>
+                        <th scope="col" colspan="7">Tracking</th>
+                        <th scope="col" colspan="10">Features</th>
+                        <th scope="col" colspan="4">Sensors</th>
+                        <th scope="col" colspan="5">Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th scope="row"></th>
+                        <td><i class="fab fa-android"></i></td>
+                        <td><i class="fab fa-apple"></i></td>
+                        <td><i class="fab fa-linux"></i></td>
+                        <td><i class="fab fa-windows"></i></td>
+                        <td><i class="fab fa-html5"></i></td>
+                        <td><i class="fab fa-unity"></i></td>
+
+                        <td class="col_rotate">Markers</td>
+                        <td class="col_rotate">NFT</td>
+                        <td class="col_rotate">Device</td>
+                        <td class="col_rotate">Plane</td>
+                        <td class="col_rotate">Hand</td>
+                        <td class="col_rotate">2D & 3D Body</td>
+                        <td class="col_rotate">Facial</td>
+
+                        <td class="col_rotate">Point clouds</td>
+                        <td class="col_rotate">Anchors</td>
+                        <td class="col_rotate">Light estimation</td>
+                        <td class="col_rotate">Environment probes</td>
+                        <td class="col_rotate">Meshing</td>
+                        <td class="col_rotate">Collaboration</td>
+                        <td class="col_rotate">Occlusion</td>
+                        <td class="col_rotate">Raycasting</td>
+                        <td class="col_rotate">Pass-through video</td>
+                        <td class="col_rotate">Session management</td>
+
+                        <td class="col_rotate">Camera</td>
+                        <td class="col_rotate">LiDAR</td>
+                        <td class="col_rotate">IMU</td>
+                        <td class="col_rotate">GPS</td>
+
+                        <td class="col_rotate">Architecture</td>
+                        <td class="col_rotate">Price</td>
+                        <td class="col_rotate">Open source</td>
+                        <td class="col_rotate">General</td>
+                        <td class="col_rotate">Studio tool</td>
+
+                    </tr>
+
+                    <div>
+                        <tr>
+                            <th scope="row"><a href="https://aframe.io/"></i>A-Frame (1.3.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger "><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a
+                                    href="http://virtual.vtt.fi/virtual/proj2/multimedia/alvar/index.html">ALVAR
+                                    (0.7.2*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger "><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://aws.amazon.com/sumerian/">Amazon Sumerian
+                                    (N/A<sup>1</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="http://apertusvr.org/">ApertusVR (0.9*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger "><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developers.google.com/ar">ARCore (1.32.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.apple.com/augmented-reality/arkit/">ARKit (6)</a></th>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.inglobetechnologies.com/augmented-reality-sdk/">ARMedia SDK (2.1.0*<sup>2</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://github.com/artoolkit/ARToolKit5">ARToolKit (5.4*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="http://www.artoolkitx.org/">artoolkitX (1.0.6.1*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://github.com/tentone/aruco">ArUco (3.1.12*<sup>3</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://ar-js-org.github.io/AR.js-Docs/">AR.js (3.4.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Online</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.augment.com/">Augment (4.0.6*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="http://augmentedpixels.com/">Augmented Pixels (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.augmentedpro.com/">AugmentedPro (2.4.3*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.banuba.com/">Banuba (1.4.2)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.blippar.com/">Blippar (1.2.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://carear.com/">CareAR (22.02.002)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://carear.com/craftar/">CraftAR (5.2.1*<sup>4</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.deepar.ai/augmented-reality-sdk">DeepAR (3.4.4)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.easyar.com/">EasyAR (4.5.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.here.com/">HERE SDK (4.12.3.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.xlsoft.com/en/products/kudan/index.html">Kudan AR (1.8.0*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.magicleap.com/en-us/learn/guides/developer-portal">Lumin SDK (0.26.0*)</a></th>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.maxst.com/">MAXST AR (5.0.6)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.minsar.app/">Minsar (2.0<sup>5</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://github.com/microsoft/MixedRealityToolkit-Unity">MRTK (2.8.2)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://nyatla.jp/nyartoolkit/wp/?page_id=198">NyARToolkit (5.0.8*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="onirix.com">Onirix (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.pikkart.com/augmented-reality/sdk/">Pikkart AR (3.5.8*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.plugxr.com/">PlugXR (2.0.0)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://zap.works/universal-ar/">Universal AR (N/A<sup>6</sup>)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Free</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.vectary.com/">Vectary (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Online</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.vidinoti.com/en/sdk-vidinoti/">Vidinoti SDK (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.viewar.com/">ViewAR SDK (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://developer.vuforia.com/">Vuforia (10.9)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.wikitude.com/">Wikitude (9.12)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td>Both</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://immersiveweb.dev/">WebXR (N/A)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-warning"><i class="far fa-circle"></i></td>
+                            <td class="table-warning"><i class="far fa-circle"></i></td>
+                            <td class="table-warning border_right"><i class="far fa-circle"></i></td>
+                            <td class="table-warning"><i class="far fa-circle"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-warning"><i class="far fa-circle"></i></td>
+                            <td class="table-warning"><i class="far fa-circle"></i></td>
+                            <td class="table-warning border_right"><i class="far fa-circle"></i></td>
+                            <td>Offline</td>
+                            <td>Free</td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="https://www.xzimg.com/">XZIMG (2.0.2*)</a></th>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success border_right"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                            <td>Offline</td>
+                            <td>Paid</td>
+                            <td class="table-danger"><i class="fas fa-times"></i></td>
+                            <td class="table-success"><i class="fas fa-check"></i></td>
+                            <td class="table-danger border_right"><i class="fas fa-times"></i></td>
+                        </tr>
+                    </div>
+                </tbody>
+            </table>
+
+            <div class="footnote">Frameworks and SDKs marked with an asterisk (*) have not been updated in 1+ years. 
+            </div>
+            <div class="footnote">Features or functions optionally supported in different platforms are marked with <i
+                    class="far fa-circle"></i>.</div><br>
+
+            <div><sup>1</sup> As of 18/05/2022, Amazon Sumerian is no longer available to new customers.</div>
+            <div><sup>2</sup> Checked on 15/08/2022, the <a href="https://dev.inglobetechnologies.com/features/">developer documentation</a> for ARMedia SDK is not available.</div>
+            <div><sup>3</sup> Checked on 15/08/2022, the original website containg the ArUco documentation is no longer available, but a GitHub repository of the code still exists. </div>
+            <div><sup>4</sup> In November 2021, CraftAR was acquired by CareAR, and now both products exist side-by-side.</div>
+            <div><sup>5</sup> As of 01/12/21, opuscope, the developing company of Minsar announced that the development of Minsar was to be discontinued. Instead, they would be focussing on their new AR social media platform, <a href="https://www.wanderland.app/">Wanderland</a>.</div>
+            <div><sup>6</sup> Universal AR is developed by <a href="https://zap.works/">Zappar</a>, they also have other AR creation and publishing tools.</div>
+
+        </div><br>
+
+        <div>
+            <h2>Update log</h2>
+            <div>
+                <h4>15/08/2022 - Updating from original publication</h4>
+                <div>The table has been copied from the original ACM Computing Surveys publication where the original table was compiled in December 2020. The information about the existing frameworks has been updated, and the CareAR framework has been added.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+}
+
+.paper_title {
+    display: inline;
+}
+
+.reference {
+    font-style: italic;
+    text-align: justify;
+}
+
+.abstract_text {
+    text-align: justify;
+}
+
+.table_title {
+    /* margin: auto; */
+    /* width: 50%; */
+}
+
+th {
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.col_rotate {
+    vertical-align: bottom;
+    text-align: center;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(0deg);
+    white-space: nowrap;
+}
+
+td {
+    text-align: center;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle
+}
+
+.border_right {
+    border-right: thin solid black;
+}
+
+.thead {
+    position: sticky;
+}
