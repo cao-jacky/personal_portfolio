@@ -2,7 +2,7 @@
 
 A summary of my publications. However, if you prefer, you can check out my [Google Scholar](https://scholar.google.com/citations?user=Ih-voa0AAAAJ&hl=en){:target="_blank"}, [ResearchGate](https://www.researchgate.net/profile/Jacky-Cao-2){:target="_blank"} or [ORCID](https://orcid.org/0000-0002-5882-2280){:target="_blank"} profiles.
 
-| Year | Citation | Title | Forum |
+| Year | Authors | Title | Forum |
 |---|---|---|---|
 | 2025 | Yakun Huang; Shengwei Meng; Yuanwei Zhu; Jun Wang; Jacky Cao; Xiuquan Qiao; Xiang Su |WebARNav: Mobile Web AR Indoor Navigation With Edge-Assisted Vision Localization | IEEE Transactions on Mobile Computing | 
 | 2024 | Xiaoli Liu; Xiang Su; Guillermo Del Campo; Jacky Cao; Boyu Fan; Edgar Saavedra; Asunción Santamaría; Juha Röning; Pan Hui; Sasu Tarkoma | Federated Learning on 5G Edge for Industrial Internet of Things| IEEE Network |
