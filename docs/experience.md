@@ -3,19 +3,19 @@
 ## University of Helsinki, Finland
 **Postdoctoral researcher**: *April 2024 - Present*
 
-I am currently a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science.
+I am currently a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. I am currently working in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium, and I was previously subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks.".
 
-- (April 2024 – February 2025) I am subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks."
-- (March 2025 – ) I am a researcher in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium.
+- Designed and deployed Python-based data pipelines to extract insights from large-scale LiDAR datasets, supporting data-driven urban innovation and optimisation.
+- Built and showcased a proof-of-concept computer vision prototype at the 2024 Nokia Foundation Awards, improving data-sharing efficiency.
+- Collaborated with Nokia Bell Labs on applied R&D, leading to two granted patents for innovative data-processing techniques.
+- Produced clear technical documentation and reports supporting technology adoption and decision-making.
 
 ---
 
 ## University of Helsinki, Finland
 **Visiting researcher**: *December 2023 - March 2024*
 
-I was a visiting researcher to the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science.
-
-- I researched the enhancement of networking for extended reality communications.
+I was a visiting researcher to the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. I researched the enhancement of networking for extended reality communications.
 
 ---
 
@@ -24,6 +24,10 @@ I was a visiting researcher to the [6G research group](https://www.helsinki.fi/e
 
 I was a researcher and had split institution affiliation between the University of Oulu and the Norwegian University of Science and Technology.
 
+- Led a distributed team to prototype and evaluate augmented reality and AI-driven frameworks through iterative, experiment-based development.
+- Applied agile methodologies to deliver validated technical proofs-of-concept, one of which progressed to a published applied solution.
+- Guided students through hypothesis formulation, experiment design, and evaluation, strengthening mentoring and systems thinking skills.
+
 ---
 
 ## University of Oulu, Finland
@@ -31,10 +35,7 @@ I was a researcher and had split institution affiliation between the University 
 
 I was a doctoral researcher in the iEdge research group (now [Future Computing Group](https://www.oulu.fi/en/research-groups/future-computing-group){:target="_blank"}) at the Centre for Ubiquitous Computing. My main research was on 5G edge-enhanced mobile augmented reality.
 
-- I researched the performance of 5G edge infrastructure for computer vision–based mobile augmented reality systems.
-- I researched the usage of 5G edge computing to support context-aware mobile augmented reality navigation on a HoloLens 2.
-- I conducted a wide-ranging survey on mobile augmented reality and the user interfaces, frameworks, and artificial intelligence methods used to support it.
-- I evaluated multimedia and transport protocols for mobile augmented reality multimedia transfer over 5G edge infrastructure between user clients and servers.
-- I researched how edge computing can be used to support WebXR-based real-time mobile augmented reality applications.
-- I researched how mobile augmented reality and smart sensing can be used to support social distancing.
-- I researched the usage of service orchestration for deploying stateful and stateless mobile augmented reality systems over edge infrastructure.
+- Developed and tested C++ and Java-based augmented reality systems integrated with 5G edge computing, improving latency and user experience through iterative experimentation.
+- Designed data analysis pipelines in Python to assess prototype performance, applying quantitative metrics and user data for evaluation.
+- Coordinated cross-functional R&D collaborations across cloud, IoT, and augmented reality, translating emerging technologies into tangible prototypes.
+- Authored 16 international publications, refining the ability to communicate complex findings in clear, decision-ready formats.
