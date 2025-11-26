@@ -1,9 +1,10 @@
 # Experience
 
 ## University of Helsinki, Finland
-**Postdoctoral researcher**: *April 2024 - Present*
 
-I am currently a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. I am currently working in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium, and I was previously subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks.".
+**Postdoctoral researcher**: *April 2024 — Present*
+
+I am currently a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. Right now, I am working in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium, and I was previously subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks.".
 
 - Designed and deployed Python-based data pipelines to extract insights from large-scale LiDAR datasets, supporting data-driven urban innovation and optimisation.
 - Built and showcased a proof-of-concept computer vision prototype at the 2024 Nokia Foundation Awards, improving data-sharing efficiency.
@@ -13,14 +14,16 @@ I am currently a postdoctoral researcher in the [6G research group](https://www.
 ---
 
 ## University of Helsinki, Finland
-**Visiting researcher**: *December 2023 - March 2024*
+
+**Visiting researcher**: *December 2023–March 2024*
 
 I was a visiting researcher to the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. I researched the enhancement of networking for extended reality communications.
 
 ---
 
 ## NTNU, Norway (Remote)
-**Researcher**: *October 2021 - May 2022*
+
+**Researcher**: *October 2021–May 2022*
 
 I was a researcher and had split institution affiliation between the University of Oulu and the Norwegian University of Science and Technology.
 
@@ -31,7 +34,8 @@ I was a researcher and had split institution affiliation between the University 
 ---
 
 ## University of Oulu, Finland
-**Doctoral researcher**: *August 2019 - February 2024*
+
+**Doctoral researcher**: *August 2019–February 2024*
 
 I was a doctoral researcher in the iEdge research group (now [Future Computing Group](https://www.oulu.fi/en/research-groups/future-computing-group){:target="_blank"}) at the Centre for Ubiquitous Computing. My main research was on 5G edge-enhanced mobile augmented reality.
 
