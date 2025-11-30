@@ -7,7 +7,12 @@ As an augmented reality researcher, I was able to test a variety of extended rea
 I developed two systems/applications:
 
 1. A system which allowed users to navigate through an environment based on air quality predictions rendered as holograms on a HoloLens 2[^2]. I created the HoloLens 2 application, a companion Android application, and server software to perform and return the machine learning results.
+
+    ![HoloLens Navigation](images/hololens_navigation.png)
+
 2. A prototype water quality visualisation application to allow scientists and decision makers to better understand the quality of water bodies in-situ[^3].
+
+    ![HoloLens Water Quality](images/hololens_water_quality.jpg)
 
 !!! success "Skills developed"
     C#, Unity, Android development, Kotlin, Java, Python
