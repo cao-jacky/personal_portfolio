@@ -2,18 +2,14 @@
 
 ## University of Helsinki, Finland
 
-**Postdoctoral researcher**: *April 2024 — Present*
+**Postdoctoral researcher**: *April 2024–December 2025*
 
-I am currently a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. Right now, I am working in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium, and I was previously subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks.".
+I was a postdoctoral researcher in the [6G research group](https://www.helsinki.fi/en/networks/6g-research){:target="_blank"} at the Department of Computer Science. I worked in the [Untangling People Flow](https://untanglingpeopleflow.com/){:target="_blank"} project and consortium, and I was previously subcontracted to perform research for Nokia Bell Labs (Network Systems and Security Research Lab) in a joint project with the University of Helsinki, "data efficiency techniques for mobile networks.".
 
 - Designed and deployed Python-based data pipelines to extract insights from large-scale LiDAR datasets, supporting data-driven urban innovation and optimisation.
 - Built and showcased a proof-of-concept computer vision prototype at the 2024 Nokia Foundation Awards, improving data-sharing efficiency.
 - Collaborated with Nokia Bell Labs on applied R&D, leading to two granted patents for innovative data-processing techniques.
 - Produced clear technical documentation and reports supporting technology adoption and decision-making.
-
----
-
-## University of Helsinki, Finland
 
 **Visiting researcher**: *December 2023–March 2024*
 
