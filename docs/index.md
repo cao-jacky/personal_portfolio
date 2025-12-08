@@ -2,13 +2,11 @@
 title: Jacky Cao
 ---
 
-Hello! I am a researcher in computer science in the 6G research group at the [University of Helsinki](https://researchportal.helsinki.fi/en/persons/jacky-cao/){:target="_blank"}.
+Hello! I am a research engineer with five years of experience in data analysis, IoT, and augmented reality.
 
 ## Summary
 
-My current research focus is the Internet of Things, trajectory prediction, and machine learning.
-
-I previously worked at the University of Oulu as a doctoral researcher, and at the Norwegian University of Science and Technology as a researcher. I am awaiting the completion of my doctoral degree from the University of Oulu.
+I previously worked as a computer science researcher at the University of Helsinki, the University of Oulu, and at the Norwegian University of Science and Technology.
 
 I am originally from Manchester (UK), but I have also lived in Durham (UK) where I completed an integrated master's degree in physics from Durham University. However, I currently live in Vantaa (Finland).
 
