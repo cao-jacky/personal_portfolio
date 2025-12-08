@@ -2,7 +2,7 @@
 title: Jacky Cao
 ---
 
-Hello! I am a research engineer with five years of experience in data analysis, IoT, and augmented reality.
+Hello! I am a research engineer with five years of experience in data analysis, IoT, and augmented reality. Currently looking for work opportunities, please reach out if I seem like a suitable fit for your team! 
 
 ## Summary
 
