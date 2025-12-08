@@ -26,8 +26,8 @@ repo_url = "https://github.com/cao-jacky/"
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-   { "Home" = "index.md" },
-   { "About me" = [
+    { "Home" = "index.md" },
+    { "About me" = [
         { "Experience" = "about-me/experience.md" },
         { "Education" = "about-me/education.md"},
         { "Research" = [
@@ -37,18 +37,24 @@ nav = [
             "about-me/research/professional_activities.md"
             ]},
         { "Teaching" = "about-me/teaching.md" },
-   ]},
-   { "Projects" = [
+    ]},
+    { "Projects" = [
         "projects/index.md",
         # "projects/untangling_people_flow.md",
         "projects/terminal_portfolio.md",
         "projects/hololens.md"
         ]},
     { "Code" = [
-        "code/index.md"
-        ]}
-]
-
+        "code/index.md",
+        {"CUDA" = [
+            "code/cuda/index.md",
+            "code/cuda/vector_addition.md"
+        ]},
+        {"Python" = [
+            "code/python/index.md",
+        ]},
+    ]},
+    ]
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
 # CSS files.
