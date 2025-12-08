@@ -1,5 +1,6 @@
 # Professional activities
-As a researcher, I have volunteered and taken part in different professional activities related to the organisation of conferences.
+
+As a researcher, I volunteered and took part in different professional activities related to the organisation of conferences.
 
 | Conference | Role |
 |---|---|
