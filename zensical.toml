@@ -26,22 +26,27 @@ repo_url = "https://github.com/cao-jacky/"
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-   { "Jacky Cao" = "index.md" },
-   { "Experience" = "experience.md" },
-   { "Education" = "education.md"},
+   { "Home" = "index.md" },
+   { "About me" = [
+        { "Experience" = "about-me/experience.md" },
+        { "Education" = "about-me/education.md"},
+        { "Research" = [
+            "about-me/research/index.md",
+            "about-me/research/publications.md",
+            #  "about-me/research/presentations.md",
+            "about-me/research/professional_activities.md"
+            ]},
+        { "Teaching" = "about-me/teaching.md" },
+   ]},
    { "Projects" = [
-    "projects/index.md",
-    # "projects/untangling_people_flow.md",
-    "projects/terminal_portfolio.md",
-    "projects/hololens.md"
-    ]},
-   { "Research" = [
-     "research/index.md",
-     "research/publications.md",
-    #  "research/presentations.md",
-     "research/professional_activities.md"
-     ]},
-    { "Teaching" = "teaching.md" },
+        "projects/index.md",
+        # "projects/untangling_people_flow.md",
+        "projects/terminal_portfolio.md",
+        "projects/hololens.md"
+        ]},
+    { "Code" = [
+        "code/index.md"
+        ]}
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -212,7 +217,7 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
