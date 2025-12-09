@@ -1,9 +1,6 @@
-# Vector Addition
+# Vector addition
 
 ## The problem
-
-!!! Warning "Nota bene"
-    I am by no means an expert and whatever I write here, could be completely wrong. I am learning and these are my notes. Use your own fact-checking skills to verify my code. 
 
 The problem is found [here](https://leetgpu.com/challenges/vector-addition){:target="_blank"}, from LeetGPU, which has coding problems like LeetCode. In short, the designed program should do element-wise addition of two vectors on a GPU.
 
@@ -29,7 +26,7 @@ extern "C" void solve(const float* A, const float* B, float* C, int N) {
 
 - `__global__` marks the function as a GPU kernel to run on the GPU.
 - `int id` is a thread ID calculation, used to define a unique thread ID among all the threads in "the grid"
-  - "the grid" refers to how the threads are arranged when executing the kernel
+    - "the grid" refers to how the threads are arranged when executing the kernel
 - `if(id<N)` is a bounds check to make sure the threads do not access memory beyond the array
 - `C[id] = A[id] + B[id]` is the actual work, i.e., the element-wise additions, where each thread adds exactly one pair of elements
 

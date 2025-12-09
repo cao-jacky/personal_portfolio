@@ -48,7 +48,8 @@ nav = [
         "code/index.md",
         {"CUDA" = [
             "code/cuda/index.md",
-            "code/cuda/vector_addition.md"
+            "code/cuda/vector_addition.md",
+            "code/cuda/matrix_multiplication.md",
         ]},
         {"Python" = [
             "code/python/index.md",
@@ -73,7 +74,9 @@ extra_css = ["stylesheets/extra.css"]
 # Read more: https://zensical.org/docs/customization/#additional-javascript
 extra_javascript = [
     "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
-    "javascript/tablesort.js"
+    "javascript/tablesort.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+    "javascripts/mathjax.js",
 ]
 
 # ----------------------------------------------------------------------------
