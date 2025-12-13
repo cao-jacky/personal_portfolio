@@ -2,7 +2,7 @@
 
 ## The problem
 
-[https://leetgpu.com/challenges/matrix-multiplication](https://leetgpu.com/challenges/{:target="_blank"}matrix-multiplication)
+[https://leetgpu.com/challenges/matrix-multiplication](https://leetgpu.com/challenges/matrix-multiplication){:target="_blank"}
 
 ```cu
 #include <cuda_runtime.h>
