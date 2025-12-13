@@ -1,4 +1,4 @@
-# Matrix Transpose
+# Matrix transpose
 
 ## The problem
 
