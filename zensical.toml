@@ -50,6 +50,7 @@ nav = [
             "code/cuda/index.md",
             "code/cuda/vector_addition.md",
             "code/cuda/matrix_multiplication.md",
+            "code/cuda/matrix_transpose.md",
         ]},
         {"Python" = [
             "code/python/index.md",
