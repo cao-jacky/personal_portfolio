@@ -1,6 +1,6 @@
 # HoloLens 2 Apps
 
-## Project Summary
+## Project summary
 
 As an augmented reality researcher, I was able to test a variety of extended reality hardware and develop several interesting applications for them. Perhaps one of the most unique devices that I experimented with, was the Microsoft HoloLens 2. In my view, the key selling points were that the visualisations produced were of decent quality and there was the Mixed Reality Toolkit 2[^1], which supported the creation of HoloLens 2 applications.
 
@@ -17,7 +17,7 @@ I developed two systems/applications:
 !!! success "Skills developed"
     C#, Unity, Android development, Kotlin, Java, Python
 
-## Project Development
+## Project development
 
 I gained a lot of hands-on experience with both C# and Unity, and the community resources (Mixed Reality Toolkit, Unity forums, etc.) were of tremendous help. It was interesting to develop extended reality applications in a game engine-based development environment, as opposed to developing for traditional smartphone applications. For example, with holograms, there were literal physical constraints of the environment impacting how users see and perceive them: if it was too bright, then holograms would typically not be viewable, or if the user moves too quickly, the holograms may sometimes become distorted. 
 

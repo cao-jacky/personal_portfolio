@@ -2,7 +2,7 @@
 
 ![Terminal Portfolio](images/terminal_portfolio.png)
 
-## Project Summary
+## Project summary
 
 At the beginning of 2025, I was tinkering with my home lab and decided that I wanted a shorter domain to access my self-hosted services. At that time, I was primarily using `jackycao.co.uk`, so accessing my Vaultwaren instance would require a long-ish URL of `passwords.jackycao.co.uk`.
 
@@ -15,7 +15,7 @@ I have since moved the terminal site to its own subdomain, and it can be accesse
 !!! success "Skills developed"
     JavaScript, CSS, web development
 
-## Project Development
+## Project development
 
 Since I wanted my website to function as an actual terminal then I had to find libraries or examples of such. Xterm.js[^2] was one possibility that I looked at but I decided against it since the terminal emulators created with it are supposed to be connected to a real Linux system. I did not want that. I just wanted a terminal-like experience where the logic and interaction was all self-contained in a user's web browser.
 

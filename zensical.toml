@@ -33,16 +33,15 @@ nav = [
         { "Research" = [
             "about-me/research/index.md",
             "about-me/research/publications.md",
-            #  "about-me/research/presentations.md",
             "about-me/research/professional_activities.md"
             ]},
         { "Teaching" = "about-me/teaching.md" },
     ]},
     { "Projects" = [
         "projects/index.md",
-        # "projects/untangling_people_flow.md",
         "projects/terminal_portfolio.md",
-        "projects/hololens.md"
+        "projects/hololens.md",
+        "projects/flights_analysis.md"
         ]},
     { "Code" = [
         "code/index.md",
@@ -331,3 +330,6 @@ link = "https://www.linkedin.com/in/jacky-cao/"
 [project.extra.analytics]
 provider = "google"
 property = "G-3DF2436XST"
+
+[project.extra.status]
+new = "Recently added"
