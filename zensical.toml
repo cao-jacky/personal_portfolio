@@ -43,6 +43,10 @@ nav = [
         "projects/hololens.md",
         "projects/flights_analysis.md"
         ]},
+    { "Home Lab" = [
+        "home-lab/index.md",
+        "home-lab/infrastructure.md",
+    ]},
     { "Code" = [
         "code/index.md",
         {"CUDA" = [
