@@ -2,6 +2,12 @@
 title: Jacky Cao
 ---
 
+<figure markdown="span">
+  ![Me](images/me.png){width="200"}
+</figure>
+
+
+
 Hello! I am a research engineer with five years of experience in data analysis, IoT, and augmented reality. I am currently looking for work opportunities, please reach out if I seem like a suitable fit for your team!
 
 ## Summary
