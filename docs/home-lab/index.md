@@ -9,3 +9,7 @@ Maybe not on that last point. It will probably cost more in money, time, and eff
 3. Tinker and experiment with different technologies and services.
 
 It is just that simple! I have a collection of Docker-based containers running services which have been created by extremely talented people, and they form the basis of my Home Lab.
+
+An overview of my Home Lab and its services can be found below.
+
+![Home Lab Diagram](images/infrastructure_diagram.png)
