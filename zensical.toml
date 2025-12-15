@@ -51,7 +51,13 @@ nav = [
             "home-lab/infrastructure/networking.md",
             "home-lab/infrastructure/software.md",
         ]},
-        "home-lab/services.md",
+        { "Services" = [
+            "home-lab/services/index.md",
+            "home-lab/services/home-assistant.md",
+            "home-lab/services/mealie.md",
+            "home-lab/services/pi-hole.md",
+            "home-lab/services/vaultwarden.md"
+        ]},
         "home-lab/backups.md"
     ]},
     { "Code" = [
