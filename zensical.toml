@@ -45,7 +45,13 @@ nav = [
         ]},
     { "Home Lab" = [
         "home-lab/index.md",
-        "home-lab/infrastructure.md",
+        { "Infrastructure" = [
+            "home-lab/infrastructure/index.md",
+            "home-lab/infrastructure/hardware.md",
+            "home-lab/infrastructure/networking.md",
+            "home-lab/infrastructure/software.md",
+        ]},
+        "home-lab/services.md",
     ]},
     { "Code" = [
         "code/index.md",
