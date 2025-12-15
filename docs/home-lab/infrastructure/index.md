@@ -6,4 +6,6 @@ Building out my Home Lab requires three main components to consider:
 2. [Networking](networking.md)
 3. [Software](software.md)
 
-With these three things, I have managed to build out my Home Lab and services, and use them on a daily basis.
+With these three things, I have managed to build out my Home Lab and services, and use them on a daily basis. The general structure of it can be found in the diagram below.
+
+![Home Lab Diagram](../images/infrastructure_diagram.png)
