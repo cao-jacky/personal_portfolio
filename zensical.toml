@@ -52,6 +52,7 @@ nav = [
             "home-lab/infrastructure/software.md",
         ]},
         "home-lab/services.md",
+        "home-lab/backups.md"
     ]},
     { "Code" = [
         "code/index.md",
