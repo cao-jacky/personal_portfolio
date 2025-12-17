@@ -6,7 +6,7 @@ Instead, what I settled on was using my domain, `jacky.sh`, and assigning subdom
 
 To illustrate how these four services work together, the general steps for accessing one of my named services is the following, e.g., Vaultwarden.
 
-1. Ensure that a connection to the Tailscale tailnet.
+1. Ensure a connection to the Tailscale tailnet.
 2. Load the URL to the service, e.g., `https://passwords.jacky.sh`.
 3. The domain name is resolved via Cloudflare's authoritative DNS[^2].
 4. Cloudflare returns a Tailscale IP for the Home Lab[^3].
