@@ -4,7 +4,7 @@ I initially installed Pi-hole to block ads on my local network, but quickly foun
 
 Instead, what I settled on was using my domain, `jacky.sh`, and assigning subdomains to more easily access and reference services, to fix my password manager to show the correct passwords, and to allow for secure HTTPS connections to the services. Pi-hole helped with this through its local DNS feature, and I couple this with Tailscale, Nginx Proxy Manager and Cloudflare.
 
-To illustrate how these four services work together, the general steps for accessing one of my other named services is the following, e.g., Vaultwarden.
+To illustrate how these four services work together, the general steps for accessing one of my named services is the following, e.g., Vaultwarden.
 
 1. Ensure that a connection to the Tailscale tailnet.
 2. Load the URL to the service, e.g., `https://passwords.jacky.sh`.
