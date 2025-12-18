@@ -37,6 +37,28 @@ nav = [
             ]},
         { "Teaching" = "about-me/teaching.md" },
     ]},
+    { "Programming" = [
+    "programming/index.md",
+        { "Languages" = [
+            "programming/languages/index.md",
+            { "CUDA" = [
+                "programming/languages/cuda/index.md",
+                "programming/languages/cuda/vector_addition.md",
+                "programming/languages/cuda/matrix_multiplication.md",
+                "programming/languages/cuda/matrix_transpose.md",
+                "programming/languages/cuda/cuda_rust.md"
+            ]},
+            {"Python" = [
+                "programming/languages/python/index.md",
+            ]},
+        ]},
+        { "Programming Challenges" = [
+            "programming/programming_challenges/index.md",
+            "programming/programming_challenges/advent_of_code.md",
+            "programming/programming_challenges/leetgpu.md",
+            "programming/programming_challenges/project_euler.md"
+        ]},
+    ]},
     { "Projects" = [
         "projects/index.md",
         "projects/terminal_portfolio.md",
@@ -59,19 +81,6 @@ nav = [
             "home-lab/services/vaultwarden.md"
         ]},
         "home-lab/backups.md"
-    ]},
-    { "Code" = [
-        "code/index.md",
-        {"CUDA" = [
-            "code/cuda/index.md",
-            "code/cuda/vector_addition.md",
-            "code/cuda/matrix_multiplication.md",
-            "code/cuda/matrix_transpose.md",
-            "code/cuda/cuda_rust.md"
-        ]},
-        {"Python" = [
-            "code/python/index.md",
-        ]},
     ]},
     ]
 # With the "extra_css" option you can add your own CSS styling to customize
