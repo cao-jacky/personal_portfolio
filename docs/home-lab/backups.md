@@ -1,6 +1,6 @@
 # Backups
 
-3-2-1, blast-off?! No! 3-2-1, and your data has less risk of catastrophic loss and improved recoverability! But what is it? I had hard time figuring it out, mainly just how to configure it for my own Home Lab.
+3-2-1, blast-off?! No! 3-2-1, and-your-data-has-less-risk-of-catastrophic-loss-and-improved-recoverability! But what is it? I had hard time figuring it out, mainly just how to configure it for my own Home Lab.
 
 > 3-2-1 backup strategy: **three** copies of your data, **two** different types of storage media, and at least **one** copy off-site.
 
@@ -17,7 +17,7 @@ The key to my backup strategy is backrest, it is such a powerful and great tool,
 
 As a side note, maybe it is worth mentioning that there will always be some associated costs with maintaining a 3-2-1 backup strategy, there is no going around this. Whether it is paying for some form of cloud storage, or if you are lucky enough to have a second NAS to store data at your parents', then perhaps there is the cost of the drives or the electricity. A calculation needs to be done as to what you can afford and how much do you value your data in relation to this cost.
 
-I am comfortable paying €6 per month for Backblaze object storage and €89 per year for Filen encrypted cloud storage knowing that my photos, documents, passwords, and other data will be backed up safely. 
+I am comfortable paying €6 per month for Backblaze object storage and €89 per year for Filen encrypted cloud storage knowing that my photos, documents, passwords, and other data will be backed up safely.
 
 ## References
 
