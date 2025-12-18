@@ -12,7 +12,7 @@ Hello! I am a research engineer with five years of experience in data analysis, 
 
 I previously worked as a computer science researcher at the University of Helsinki, the University of Oulu, and at the Norwegian University of Science and Technology.
 
-I am originally from Manchester, UK, but I have also lived in Durham, UK where I completed an integrated master's degree in physics at Durham University. I came to Finland in 2019, firstly to Oulu, and then later moved to Vantaa, where I now reside.
+I am originally from Manchester, UK, but I have also lived in Durham, UK where I completed an integrated master's degree in physics at Durham University. After that, I came to Finland in 2019, firstly to Oulu, and then later moved to Vantaa in 2023, where I now reside.
 
 Tervetuloa minun kotisivulle! Bienvenue sur mon site ! Welcome to my website!
 
