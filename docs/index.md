@@ -6,7 +6,7 @@ title: Jacky Cao
   ![Me](images/me.png){width="200"}
 </figure>
 
-Hello! I am a research engineer with five years of experience in data analysis and prototyping for IoT, and augmented reality. I am currently looking for work opportunities, please reach out if I seem like a suitable fit for your team!
+Hello! I am a research engineer with five years of experience in data analysis, and prototyping for IoT and augmented reality. I am currently looking for work opportunities, please reach out if I seem like a suitable fit for your team!
 
 ## Summary
 
