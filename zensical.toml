@@ -67,6 +67,7 @@ nav = [
             "code/cuda/vector_addition.md",
             "code/cuda/matrix_multiplication.md",
             "code/cuda/matrix_transpose.md",
+            "code/cuda/cuda_rust.md"
         ]},
         {"Python" = [
             "code/python/index.md",
