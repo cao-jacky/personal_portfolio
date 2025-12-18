@@ -3,3 +3,7 @@
   --md-accent-fg-color--light: #0f548b;
   --md-accent-fg-color--dark:  #81bff2;
 }
+
+html.js-focus-visible.js body div.md-container main.md-main div.md-main__inner.md-grid div.md-content article.md-content__inner.md-typeset div.advent_of_code_table div.md-typeset__scrollwrap div.md-typeset__table table thead tr th {
+  min-width: unset;
+}

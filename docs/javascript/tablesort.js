@@ -6,7 +6,3 @@ document$.subscribe(function() {
     new Tablesort(table);
   });
 });
-
-document.querySelectorAll('.advent_of_code_table table th').forEach(function(th) {
-  th.style.minWidth = 'unset';
-});
