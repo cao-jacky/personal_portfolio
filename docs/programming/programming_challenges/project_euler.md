@@ -4,7 +4,7 @@ Given that the [Advent of Code](advent_of_code.md) has a seasonal theme to its p
 
 For now, I have been solving the problems using Python through Jupyter notebooks, it is my preferred way to prototype code.
 
-| Problem | Solution |
+| Problem | Python Solution |
 |---|---|
 | [Problem 1](https://projecteuler.net/problem=1){:target="_blank"} | [problem_1.ipynb](https://github.com/cao-jacky/project_euler/blob/main/problem_1.ipynb){:target="_blank"} |
 | [Problem 2](https://projecteuler.net/problem=2){:target="_blank"} | [problem_2.ipynb](https://github.com/cao-jacky/project_euler/blob/main/problem_2.ipynb){:target="_blank"} |
