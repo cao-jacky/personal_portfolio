@@ -6,7 +6,5 @@ In this latter work, I also worked with C, C++, C#, Java, Kotlin, and Matlab. Ho
 
 ## References
 
-[^1]: - [https://github.com/cao-jacky/degree_level1](https://github.com/cao-jacky/degree_level1){:target="_blank"}
-    - [https://github.com/cao-jacky/degree_level2](https://github.com/cao-jacky/degree_level2){:target="_blank"}
-[^2]: - [https://github.com/cao-jacky/degree_level3](https://github.com/cao-jacky/degree_level3){:target="_blank"}
-    - [https://github.com/cao-jacky/degree_level4](https://github.com/cao-jacky/degree_level4){:target="_blank"}
+[^1]: [https://github.com/cao-jacky/degree_level1](https://github.com/cao-jacky/degree_level1){:target="_blank"}, [https://github.com/cao-jacky/degree_level2](https://github.com/cao-jacky/degree_level2){:target="_blank"}
+[^2]: [https://github.com/cao-jacky/degree_level3](https://github.com/cao-jacky/degree_level3){:target="_blank"}, [https://github.com/cao-jacky/degree_level4](https://github.com/cao-jacky/degree_level4){:target="_blank"}
