@@ -4,6 +4,8 @@
 
 [https://leetgpu.com/challenges/matrix-transpose](https://leetgpu.com/challenges/matrix-transpose){:target="_blank"}
 
+My solution can be found [here](https://github.com/cao-jacky/leetgpu/blob/main/matrix_transpose.cu){:target="_blank"}.
+
 ```cu
 #include <cuda_runtime.h>
 
