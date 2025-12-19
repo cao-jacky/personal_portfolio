@@ -28,6 +28,7 @@ repo_url = "https://github.com/cao-jacky/"
 nav = [
     { "Home" = "index.md" },
     { "About me" = [
+        "about-me/index.md", 
         { "Experience" = "about-me/experience.md" },
         { "Education" = "about-me/education.md"},
         { "Research" = [
