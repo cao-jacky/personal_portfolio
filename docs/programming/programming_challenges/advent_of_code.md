@@ -31,5 +31,5 @@ My workflow for these puzzles is using Python in Jupyter notebooks.
 | 22nd  | [:lucide-check:](https://github.com/cao-jacky/advent_of_code/blob/main/2015/day22.ipynb){:target="_blank"} | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: |      |
 | 23rd  | [:lucide-check:](https://github.com/cao-jacky/advent_of_code/blob/main/2015/day23.ipynb){:target="_blank"} | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: |      |
 | 24th  | [:lucide-check:](https://github.com/cao-jacky/advent_of_code/blob/main/2015/day24.ipynb){:target="_blank"} | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: |      |
-| 25th  | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: |      |
+| 25th  | [:lucide-check:](https://github.com/cao-jacky/advent_of_code/blob/main/2015/day25.ipynb){:target="_blank"} | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: | :lucide-x: |      |
 </div>
