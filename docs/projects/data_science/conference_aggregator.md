@@ -33,6 +33,6 @@ The next step was to try to find the basic data that you would associate with co
 ## References
 
 [^1]: [http://www.wikicfp.com/cfp/home](http://www.wikicfp.com/cfp/home){:target="_blank"}
-[^2]: [https://confsearch.ethz.ch](https://confsearch.ethz.ch{:target="_blank"}
-[^3]: (https://julkaisufoorumi.fi/en/news/publication-forum-steering-group-decided-changes-classification-system)[https://julkaisufoorumi.fi/en/news/publication-forum-steering-group-decided-changes-classification-system]{:target="_blank"}
+[^2]: [https://confsearch.ethz.ch](https://confsearch.ethz.ch){:target="_blank"}
+[^3]: [https://julkaisufoorumi.fi/en/news/publication-forum-steering-group-decided-changes-classification-system](https://julkaisufoorumi.fi/en/news/publication-forum-steering-group-decided-changes-classification-system){:target="_blank"}
 [^4]: [https://jfp.csc.fi/jufoportal](https://jfp.csc.fi/jufoportal){:target="_blank"}
