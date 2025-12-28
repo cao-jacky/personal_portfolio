@@ -72,7 +72,7 @@ nav = [
         "projects/hololens.md",
         {"Data Science" = [
             "projects/data_science/flights_analysis.md",
-            "projects/data_science/conference_aggregator.md"
+            # "projects/data_science/conference_aggregator.md"
             ]}
         ]},
     { "Home Lab" = [
