@@ -53,6 +53,12 @@ nav = [
                 "programming/languages/python/index.md",
             ]},
         ]},
+        { "Data Science" = [
+            "programming/data_science/index.md",
+            "programming/data_science/on2_complexity.md",
+            "programming/data_science/big_o_complexities.md"
+
+        ]},
         { "Programming Challenges" = [
             "programming/programming_challenges/index.md",
             "programming/programming_challenges/advent_of_code.md",
