@@ -8,7 +8,7 @@ In November 2025, I decided that I wanted to develop a tool that I could use to 
 2. The tool could offer suggestions for alternative forums if a deadline appears too soon.
 3. There should be ways to compare between different conferences.
 
-These were not the main features that I wanted, but the main ones which were lacking from other search tools. Of course, I wanted a basic search functionality, a way to see conference details and upcoming deadlines.
+These were not the main features that I wanted, but the main ones which were lacking from other search tools. Of course, I wanted a basic search functionality, a way to see conference details and upcoming deadlines. 
 
 !!! success "Skills developed"
     Python data analysis (pandas, polars), PostgresSQL (psycopg2), Python (multi-threading), JavaScript (Node.js)
