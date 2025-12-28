@@ -1,3 +1,7 @@
+---
+icon: lucide/candy-cane
+---
+
 # Advent of Code
 
 I first found out about the [Advent of Code](https://adventofcode.com){:target="_blank"} on Reddit back in December 2020. I was intrigued by it and was hooked after the first few puzzles. However, I ended up stopping after a few days, I became busier with other projects and work. Throughout these years, I have come back to it, on-and-off, and I still have not completed all the puzzles. Maybe I will get to it eventually!

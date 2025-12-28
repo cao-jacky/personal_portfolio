@@ -1,3 +1,7 @@
+---
+icon: lucide/graduation-cap
+---
+
 # Education
 
 ## University of Oulu, Finland

@@ -1,3 +1,7 @@
+---
+icon: lucide/database-backup
+---
+
 # Backups
 
 3-2-1, blast-off?! No! 3-2-1, and-your-data-has-less-risk-of-catastrophic-loss-and-improved-recoverability! But what is it? I had hard time figuring it out, mainly just how to configure it for my own Home Lab.

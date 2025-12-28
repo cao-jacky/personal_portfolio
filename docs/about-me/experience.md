@@ -1,3 +1,7 @@
+---
+icon: lucide/briefcase-business
+---
+
 # Experience
 
 ## University of Helsinki, Finland

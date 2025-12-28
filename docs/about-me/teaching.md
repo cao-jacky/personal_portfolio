@@ -1,3 +1,7 @@
+---
+icon: lucide/university
+---
+
 # Teaching
 
 During my time as a doctoral and postdoctoral researcher, I had the pleasure of being a teaching assistant for several courses and a supervisor for a handful of master's projects.

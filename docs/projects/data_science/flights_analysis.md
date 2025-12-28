@@ -1,4 +1,5 @@
 ---
+icon: lucide/plane-takeoff
 tags:
   - untangling people flow
 ---

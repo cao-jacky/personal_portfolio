@@ -1,3 +1,7 @@
+---
+icon: lucide/monitor-cloud
+---
+
 # Services
 
 As with any good Home Lab tinkerer, I have tested a wide variety of services and I am still continually finding new ones to complement my existing set. Some tested services end up not being that useful to me, so I just simply turn them off and archive them — simple as!

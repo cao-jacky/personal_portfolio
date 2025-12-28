@@ -1,3 +1,7 @@
+---
+icon: lucide/rectangle-goggles
+---
+
 # HoloLens 2 Apps
 
 ## Project summary

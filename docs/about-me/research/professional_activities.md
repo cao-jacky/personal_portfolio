@@ -1,3 +1,7 @@
+---
+icon: lucide/message-circle
+---
+
 # Professional activities
 
 As a researcher, I volunteered and took part in different professional activities related to the organisation of conferences.

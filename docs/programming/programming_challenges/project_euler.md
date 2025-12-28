@@ -1,3 +1,7 @@
+---
+icon: lucide/variable
+---
+
 # Project Euler
 
 Given that the [Advent of Code](advent_of_code.md) has a seasonal theme to its problems, I wanted to complete and attempt more general problems. Something between a mix of mathematics and programming, and that is where [Project Euler](https://projecteuler.net){:target="_blank"} comes in.

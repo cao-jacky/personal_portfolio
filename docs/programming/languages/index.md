@@ -1,3 +1,7 @@
+---
+icon: lucide/square-code
+---
+
 # Languages
 
 My programming background is rooted in Python. As a physicist, I used Python to solve a variety of physics and astrophysics problems[^1] and to model cosmological behaviours[^2]. More recently, as a computer scientist, I was using Python to perform data analysis and to create data pipelines. Furthermore, I used it to create research prototypes for IoT and augmented reality research.

@@ -1,3 +1,7 @@
+---
+icon: lucide/lectern
+---
+
 # Conference Aggregator
 
 ## Project Summary

@@ -1,3 +1,7 @@
+---
+icon: lucide/database
+---
+
 # Data Science
 
 In my role as a [researcher](../../about-me/experience.md) and from completing [programming challenges](../programming_challenges/index.md), I have encountered various aspects of data science. For example, with [Advent of Code](../programming_challenges/advent_of_code.md) problems, I have been learning and understanding about different data structures and algorithms. Similarly, in my work, I created and manipulated data structures.

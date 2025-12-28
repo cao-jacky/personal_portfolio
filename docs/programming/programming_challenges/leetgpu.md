@@ -1,3 +1,7 @@
+---
+icon: lucide/gpu
+---
+
 # LeetGPU
 
 LeetGPU is a GPU programming platform where users can write GPU programs and execute them on real hardware through their web browsers. I am using LeetGPU because of its GPU programming challenges. It offers me an opportunity to learn about GPU programming, such as [CUDA](../languages/cuda/index.md). Furthermore, it has the option of solving challenges using other GPU programming libraries, such as PyTorch, which I would also like to improve on.

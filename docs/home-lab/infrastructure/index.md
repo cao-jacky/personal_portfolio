@@ -1,3 +1,7 @@
+---
+icon: lucide/server
+---
+
 # Infrastructure
 
 Building out my Home Lab requires three main components to consider:

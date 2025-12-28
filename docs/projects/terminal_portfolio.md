@@ -1,3 +1,7 @@
+---
+icon: lucide/square-terminal
+---
+
 # Terminal Portfolio
 
 ![Terminal Portfolio](images/terminal_portfolio.png)

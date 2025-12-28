@@ -1,3 +1,7 @@
+---
+icon: lucide/newspaper
+---
+
 # Publications
 
 A summary of my publications. However, if you prefer, you can check out my [Google Scholar](https://scholar.google.com/citations?user=Ih-voa0AAAAJ&hl=en){:target="_blank"}, [ResearchGate](https://www.researchgate.net/profile/Jacky-Cao-2){:target="_blank"} or [ORCID](https://orcid.org/0000-0002-5882-2280){:target="_blank"} profiles.
