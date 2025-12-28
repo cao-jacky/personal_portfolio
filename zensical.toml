@@ -70,7 +70,10 @@ nav = [
         "projects/index.md",
         "projects/terminal_portfolio.md",
         "projects/hololens.md",
-        "projects/flights_analysis.md"
+        "projects/flights_analysis.md",
+        {"Data Science" = [
+            "projects/data_science/conference_aggregator.md"
+            ]}
         ]},
     { "Home Lab" = [
         "home-lab/index.md",
