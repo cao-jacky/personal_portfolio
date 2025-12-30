@@ -65,6 +65,7 @@ nav = [
             "programming/data_science/big_o_complexities.md"
 
         ]},
+        "programming/regex.md"
     ]},
     { "Projects" = [
         "projects/index.md",
