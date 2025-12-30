@@ -17,7 +17,7 @@ There are cheatsheets[^1],[^2] online, but I am interested in doing some kind of
 | Negated character class | Selecting words except certain characters | Use `^`, `/b[^eo]r/g` |
 | Character range | Selecting letter ranges | Use `[]` and `-`, `/[e-o]/g` |
 | Digit range | Selecting number ranges | Use `[]` and `-`, `/[3-6]/g` |
-| Word character class | Selecting letters, numbers, and underscores | Use `\w`, `/\w/g` |
+| Word character class | Selecting letters, numbers, and underscores | Use `\w`[^7], `/\w/g` |
 | Non-word character class | Selecting all but letters, numbers, and underscores | Use `\W`, `/\W/g` |
 | Digit character class | Selecting only numbers | Use `\d`, `/\d/g` |
 | Non-digit character class | Selecting all but numbers | Use `\D`, `/\D/g` |
@@ -82,4 +82,5 @@ There are cheatsheets[^1],[^2] online, but I am interested in doing some kind of
 [^3]: [https://regexlearn.com/](https://regexlearn.com/){:target="_blank"}
 [^4]: Where `b` and `g` are the fixed characters we want to search combinations of, e.g., `bar, ber, etc.`
 [^5]: `|` is different to charset `[abc]`, since the latter operate at the character level, and alternatives are on the expression level.
-[^6]: Regex does greedy matching by default, i.e., matching as long as possible. 
+[^6]: Regex does greedy matching by default, i.e., matching as long as possible.
+[^7]: `\w` is equivalent to the character range `[A-Za-z0-9_]`. 
