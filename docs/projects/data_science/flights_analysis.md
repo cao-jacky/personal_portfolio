@@ -197,12 +197,12 @@ stddev_cancelled = cancelled_counts['count'].std()
 and then, the data was plotted using Matplotlib to create graph-based visualisations:
 
 <figure markdown="span">
-  ![Flights Analysis Popular Destination](images/flights_analysis_popular_destinations.png)
+  ![Flights Analysis Popular Destination](../images/flights_analysis_popular_destinations.png)
   <figcaption>The 30 top flight destinations for the data from 2025-06-11 00:00 to 2025-06-18 00:00.</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Flights Analysis Popular Destination](images/flights_analysis_cancelled_flights.png)
+  ![Flights Analysis Popular Destination](../images/flights_analysis_cancelled_flights.png)
   <figcaption>A visualisation of the cancelled flights compared to those which actually departed for the data from 2025-06-11 00:00 to 2025-06-14 00:00.</figcaption>
 </figure>
 
