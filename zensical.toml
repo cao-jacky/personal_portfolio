@@ -52,6 +52,10 @@ nav = [
             {"Python" = [
                 "programming/languages/python/index.md",
             ]},
+            {"Rust" = [
+                "programming/languages/rust/index.md",
+                "programming/languages/rust/data_analysis.md",
+            ]},
         ]},
         { "Programming Challenges" = [
             "programming/programming_challenges/index.md",
